@@ -1,0 +1,137 @@
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fc354c;
+	/* fallback for old browsers*/
+	/*left to right gradient*/
+	background: -webkit-linear-gradient(to right, #fc354c, #0abfbc);
+	background: linear-gradient(to right, #fc354c, #0abfbc);	
+}
+
+input {
+	border: none;
+	width: 100%;
+	height: 48px;
+	background-color: #ddd;
+	margin: 0;
+	padding-left: 5%;
+	font-size: 1.5em;
+	color: #888;
+	transition: 0.2s linear;
+}
+/*#8e9eab
+#eef2f3*/
+input::placeholder {
+	font-size: 1em;
+	color: #888;
+}
+
+/* remove placeholder text on focus */
+input:focus::-webkit-input-placeholder { 
+	color:transparent;
+}
+
+input:focus:-moz-placeholder { 
+	color:transparent;
+} /* FF 4-18 */
+
+input:focus::-moz-placeholder { 
+	color:transparent;
+} /* FF 19+ */
+
+input:focus:-ms-input-placeholder { 
+	color:transparent; 
+} /* IE 10+ */
+
+
+h1 {
+	display: block;
+	text-transform: uppercase;
+	background-color: rgba(10,100,240,0.9);
+	color: #fff;
+	padding: 1.5% 0 1.5% 5%;
+	margin: 0;
+	font-weight: normal;
+}
+
+#toggle {
+	float: right;
+	margin-right: 5%;
+}
+
+#toggle:hover {
+	cursor: pointer;
+}
+
+ul {
+	transition: 0.2s linear;
+}
+
+ul, li {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+
+/* cool trick */
+/* set line-height equal to height to get vertical center */
+li {
+	width: 100%;
+	height: 40px;
+	background-color:#fff;
+	line-height: 40px;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1;
+}
+
+span, i {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	
+}
+
+span.black {
+	background: #e74c3c;
+	height: 40px;
+	width: 0;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	transition: .2s linear;
+	opacity: 0;
+}
+
+i {
+	margin: 0 auto;
+}
+
+
+#container {
+	margin: 10% auto;
+	width: 360px;
+	overflow: hidden;
+	box-shadow: 0 0 3pc rgba(0,0,0,0.2);
+}
+
+.inactive {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.black {
+	color: white;
+}
